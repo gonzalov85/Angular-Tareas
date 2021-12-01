@@ -10,7 +10,6 @@
             <ul class="list-group">
                 <li *ngFor="let tarea of listTareas; let i = index" class="list-group-item d-flex justify-content-between">
                     <span class="cursor" (click)="actualizarTarea(tarea, i)">
-
                         <i [ngClass]="tarea.estado ? 'fas fa-check-circle text-success' : 'far fa-circle'"></i>
                     </span>
                     {{tarea.nombre}}
